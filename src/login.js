@@ -1,4 +1,4 @@
-import { auth, provider } from "./firebase";
+import { auth, provider } from "./firebase.js";
 
 import { loadText, startBasicScene } from "./setup-scene.js";
 
