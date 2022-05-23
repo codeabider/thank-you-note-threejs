@@ -8,7 +8,9 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "heroku-postbuild" : "parcel build index.html"
+    
   },
   "dependencies": {
     "firebase": "7.19.1",
