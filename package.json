@@ -1,0 +1,23 @@
+{
+  "name": "thank-you-note-threejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "firebase": "7.19.1",
+    "three": "0.140.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": [
+    "starter",
+    "javascript",
+    "threejs"
+  ]
+}
