@@ -1,17 +1,21 @@
-import { auth, provider } from "./firebase.js";
-
 import { loadText, startBasicScene } from "./setup-scene.js";
 
-document.getElementById("login").addEventListener("click", () => {
-  auth
-    .signInWithPopup(provider)
-    .then((res) => {
-      document.querySelector(".login-section").classList.add("hidden");
+const nameInputElem = document.getElementById("name");
+const submitButtonElem = document.getElementById("login");
 
-      const userFirstName = res?.user?.displayName?.split(" ")?.[0];
+nameInputElem.addEventListener("keyup", (e) => {
+  console.log(e.target.value);
 
-      startBasicScene();
-      loadText(userFirstName);
-    })
-    .catch((err) => err);
+  if (e.target.value.length >= 3) {
+    submitButtonElem.disabled = false;
+  }
+});
+
+submitButtonElem.addEventListener("click", () => {
+  const name = nameInputElem.value;
+
+  document.querySelector(".login-section").classList.add("hidden");
+
+  startBasicScene();
+  loadText(name);
 });

@@ -88,7 +88,13 @@ const startBasicScene = () => {
   threeObj.scene.add(new THREE.AmbientLight(0xffffff, 1));
 
   // SCENE
-  threeObj.scene.background = new THREE.Color(0x000000);
+  const loader = new THREE.TextureLoader();
+  loader.load(
+    "https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg",
+    function (texture) {
+      threeObj.scene.background = texture;
+    }
+  );
 
   document.body.appendChild(threeObj.renderer.domElement);
 };

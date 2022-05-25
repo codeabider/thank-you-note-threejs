@@ -4,18 +4,16 @@
 <head>
 	<title>So Long, Folks!</title>
 	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+	<link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
 	<section class="login-section">
-		<h1 class="heading">Please use Google to</h1>
-		<button class="login-button" id="login">Login</button>
+		<h1 class="heading">Hey<input class="name-input" id="name" placeholder="you"/>, please click</h1>
+		<button class="login-button" id="login" disabled>here</button>
 	</section>
-	<div id="app"></div>
-	<script src="{{ site.baseurl }}/setup-scene.js" type="module"></script>
-	<script src="{{ site.baseurl }}/firebase.js" type="module"></script>
-	<script src="{{ site.baseurl }}/login.js" type="module"></script>
+	<script src="./src/setup-scene.js" type="module"></script>
+	<script src="./src/login.js" type="module"></script>
 </body>
 
 </html>
