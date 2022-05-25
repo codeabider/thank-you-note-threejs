@@ -42039,7 +42039,9 @@ var startBasicScene = function startBasicScene() {
 
   threeObj.scene.background = new THREE.Color(0x000000);
   document.body.appendChild(threeObj.renderer.domElement);
-};
+}; // startBasicScene();
+// loadText('userFirstName');
+
 
 exports.startBasicScene = startBasicScene;
 },{"three":"node_modules/three/build/three.module.js","three/examples/jsm/loaders/FontLoader":"node_modules/three/examples/jsm/loaders/FontLoader.js","three/examples/jsm/geometries/TextGeometry":"node_modules/three/examples/jsm/geometries/TextGeometry.js","three/examples/jsm/controls/OrbitControls":"node_modules/three/examples/jsm/controls/OrbitControls.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -42070,7 +42072,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61509" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56514" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
